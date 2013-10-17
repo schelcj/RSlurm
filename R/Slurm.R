@@ -1,11 +1,4 @@
-# SLURM_JOBID
-# SLURM_ARRAY_JOB_ID
-# SLURM_ARRAY_TASK_ID
-# 
-# SLURM_ARRAYID
-# Sys.getenv('SLURM_ARRAYID')
-
-slurm <- function() {
+returnslurm <- function() {
   UseMethod("slurm")
 }
 
