@@ -7,7 +7,7 @@ slurm.jobid <- function() {
 }
 
 slurm.array_job_id <- function() {
-  return(as.numberic(Sys.getenv('SLURM_ARRAY_JOB_ID')))
+  return(as.numeric(Sys.getenv('SLURM_ARRAY_JOB_ID')))
 }
 
 slurm.array_task_id <- function() {
@@ -16,4 +16,8 @@ slurm.array_task_id <- function() {
 
 slurm.arrayid <- function() {
   return(as.numeric(Sys.getenv('SLURM_ARRAYID')))
+}
+
+slurm.job_name <- function() {
+  return(Sys.getenv('SLURM_JOB_NAME'))
 }
