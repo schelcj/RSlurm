@@ -22,17 +22,21 @@ test.tearDown <- function() {
 }
 
 test.slurm_jobid <- function() {
-  checkEquals(slurm.jobid, fixture$slurm_jobid)
+  jobid <- slurm.jobid()
+  checkEquals(jobid, fixture$slurm_jobid)
 }
 
 test.slurm_arrayid <- function() {
-  checkEquals(slurm.arrayid, fixture$slurm_arrayid)
+  arrayid <- slurm.arrayid()
+  checkEquals(arrayid, fixture$slurm_arrayid)
 }
 
 test.slurm_array_job_id <- function() {
-  checkEquals(slurm.array_job_id, fixture$slurm_array_job_id)
+  array_job_id <- slurm.array_job_id()
+  checkEquals(array_job_id, fixture$slurm_array_job_id)
 }
 
 test.slurm_array_task_id <- function() {
-  checkEquals(slurm.array_task_id, fixture$slurm_array_task_id)
+  array_task_id <- slurm.array_task_id()
+  checkEquals(array_task_id, fixture$slurm_array_task_id)
 }
