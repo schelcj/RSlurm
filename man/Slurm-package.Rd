@@ -1,11 +1,14 @@
-\name{Slurm}
-\alias{Slurm}
-\alias{Slurm}
+\name{Slurm-package}
+\alias{Slurm-package}
 \docType{package}
-\title{
-Slurm Job Environment
-
-Slurm
+\title{Slurm Job Environment}
+\usage{
+slurm.jobid()
+slurm.array_job_id()
+slurm.array_task_id()
+slurm.arrayid()
+slurm.job_name()
+}
 }
 \description{
 Provides Slurm job environment information.
@@ -19,24 +22,13 @@ Date: \tab 2013-10-10\cr
 License: \tab GPLv2\cr
 }
 }
-\usage{
-slurm.jobid()
-slurm.job_name()
-}
 \author{
 Chris Scheller
 
 Maintainer: Chris Scheller <schelcj@umich.edu>
 }
 \references{
+\url{http://slurm.schedmd.com/}
 }
-\keyword{ package }
-\seealso{
-}
-\examples{
-## Get the current job id
-jobid <- slurm.jobid()
-
-## Get the current job name
-jobname <- slurm.job_name()
-}
+\keyword{slurm}
+%% list methods
