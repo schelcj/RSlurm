@@ -9,7 +9,6 @@ slurm.array_task_id()
 slurm.arrayid()
 slurm.job_name()
 }
-}
 \description{
 Provides Slurm job environment information.
 }
@@ -31,4 +30,3 @@ Maintainer: Chris Scheller <schelcj@umich.edu>
 \url{http://slurm.schedmd.com/}
 }
 \keyword{slurm}
-%% list methods
